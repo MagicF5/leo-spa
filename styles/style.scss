@@ -347,6 +347,7 @@ h2 {
 }
 
 
+
 .img__treatment img {
     width: 100%;
 }
@@ -872,11 +873,15 @@ input:last-child {
     margin-bottom: 20px;
     padding-left: 20px;
     outline: 0;
-    line-height: 50px;
 
     @media (max-width: 992px) {
         padding-left: 0;
     }
+}
+
+.textarea__padding {
+    padding-top: 18px;
+    height: 100px;
 }
 
 

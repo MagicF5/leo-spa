@@ -707,11 +707,14 @@ input:last-child {
   height: 50px;
   margin-bottom: 20px;
   padding-left: 20px;
-  outline: 0;
-  line-height: 50px; }
+  outline: 0; }
   @media (max-width: 992px) {
     .con__form {
       padding-left: 0; } }
+
+.textarea__padding {
+  padding-top: 18px;
+  height: 100px; }
 
 @media (max-width: 576px) {
   input .read__more__button {
