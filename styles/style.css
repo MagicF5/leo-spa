@@ -577,6 +577,9 @@ h6 {
     .ap_form, select {
       margin-right: 0; } }
 
+option {
+  padding: 10px 0; }
+
 textarea {
   font-size: 12px;
   margin-bottom: 30px;
@@ -587,7 +590,8 @@ textarea {
   font-weight: 400;
   width: 100%;
   max-width: 660px;
-  outline: 0; }
+  outline: 0;
+  resize: none; }
 
 input:last-child {
   margin-right: 0; }
@@ -702,10 +706,14 @@ input:last-child {
   height: 50px;
   margin-bottom: 20px;
   padding-left: 20px;
-  outline: 0; }
+  outline: 0;
+  line-height: 50px; }
   @media (max-width: 992px) {
     .con__form {
       padding-left: 0; } }
+
+input {
+  cursor: pointer; }
 
 @media (max-width: 576px) {
   input .read__more__button {
@@ -767,10 +775,10 @@ footer .header__nav a:first-child {
   background-color: #b1b4bb;
   margin-left: 15; }
 
-.social__links .fa-facebook-f,
-.fa-instagram,
-.fa-twitter,
-.fa-vimeo-v {
+.fa-facebook-f__padding,
+.fa-instagram__padding,
+.fa-twitter__padding,
+.fa-vimeo-v__padding {
   padding-right: 15px; }
 
 h5 {
