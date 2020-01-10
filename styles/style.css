@@ -290,8 +290,7 @@ h2 {
   position: absolute;
   top: 0;
   transition: opacity  0.8s ease-in-out;
-  opacity: 0;
-  transition: ease-in; }
+  opacity: 0; }
 
 .red__background:hover {
   opacity: 0.9; }
