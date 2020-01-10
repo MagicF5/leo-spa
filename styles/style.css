@@ -247,7 +247,8 @@ h2 {
   justify-content: center;
   display: flex;
   transition: color  0.4s ease-in-out;
-  outline: 0; }
+  outline: 0;
+  cursor: pointer; }
 
 .read__more__button:hover {
   color: black; }
@@ -597,6 +598,7 @@ input:last-child {
   margin-right: 0; }
 
 .appointment__button {
+  cursor: pointer;
   width: 200px;
   height: 50px;
   background-color: #ff817e;
@@ -711,9 +713,6 @@ input:last-child {
   @media (max-width: 992px) {
     .con__form {
       padding-left: 0; } }
-
-input {
-  cursor: pointer; }
 
 @media (max-width: 576px) {
   input .read__more__button {

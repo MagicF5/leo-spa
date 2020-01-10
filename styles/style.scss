@@ -306,6 +306,7 @@ h2 {
     display: flex;
     transition: color  0.4s ease-in-out;
     outline: 0;
+    cursor: pointer;
 }
 
 .read__more__button:hover {
@@ -739,6 +740,7 @@ input:last-child {
 }
 
 .appointment__button {
+    cursor: pointer;
     width: 200px;
     height: 50px;
     background-color: $red_button_color;
@@ -878,10 +880,6 @@ input:last-child {
     }
 }
 
-
-input {
-    cursor: pointer;
-} 
 
 input .read__more__button {
 
