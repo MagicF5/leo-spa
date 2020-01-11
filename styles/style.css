@@ -42,24 +42,24 @@
       padding-right: 0; } }
 
 .burger {
-  width: 20px;
+  width: 25px;
   height: 2px;
   background-color: #ff817e;
   display: none; }
   .burger::after {
     content: "";
     position: absolute;
-    width: 20px;
+    width: 25px;
     height: 2px;
     background-color: #ff817e;
-    margin-top: -7px; }
+    margin-top: -10px; }
   .burger::before {
     content: "";
     position: absolute;
-    width: 20px;
+    width: 25px;
     height: 2px;
     background-color: #ff817e;
-    margin-top: -14px; }
+    margin-top: -20px; }
   @media (max-width: 768px) {
     .burger {
       display: block; } }

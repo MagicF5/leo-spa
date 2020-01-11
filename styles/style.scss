@@ -61,7 +61,7 @@ $grey_font_color:   #888888;
 }
 
 .burger {
-    width: 20px;
+    width: 25px;
     height: 2px;
     background-color: $red_button_color;
     display: none;
@@ -69,19 +69,19 @@ $grey_font_color:   #888888;
     &::after {
         content: "";
         position: absolute;
-        width: 20px;
+        width: 25px;
         height: 2px;
         background-color: $red_button_color;
-        margin-top: -7px;
+        margin-top: -10px;
     }
 
     &::before {
         content: "";
         position: absolute;
-        width: 20px;
+        width: 25px;
         height: 2px;
         background-color: $red_button_color;
-        margin-top: -14px;
+        margin-top: -20px;
     }
 
     @media (max-width: 768px) { 
