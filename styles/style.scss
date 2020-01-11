@@ -44,7 +44,51 @@ $grey_font_color:   #888888;
 .header__items {
     display: flex;
     justify-content: flex-start;
+
+    @media (max-width: 768px) { 
+        justify-content: space-between;
+        align-items: flex-end;
 }
+}
+
+.header__logo {
+    padding-right: 160px;
+
+    @media (max-width: 768px) { 
+        padding-right: 0;
+}
+
+}
+
+.burger {
+    width: 20px;
+    height: 2px;
+    background-color: $red_button_color;
+    display: none;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background-color: $red_button_color;
+        margin-top: -7px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background-color: $red_button_color;
+        margin-top: -14px;
+    }
+
+    @media (max-width: 768px) { 
+        display: block;
+    }    
+}
+
 
 .header__nav {
     display: flex;
@@ -52,12 +96,20 @@ $grey_font_color:   #888888;
 
     @media (max-width: 768px) { 
         display: none;
-    }
+    }  
 }
 
-.header__logo {
-    padding-right: 160px;
+.header__nav__burger {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    background-color: rgb(226, 189, 189);
+    align-items: center;
+    left: 0;
 }
+
 
 .header__nav > a {
     color: $black_font_color;
@@ -70,6 +122,10 @@ $grey_font_color:   #888888;
     font-weight: 500;
     transition: color  0.4s ease-in-out;
     z-index: 1;
+
+    @media (max-width: 768px) { 
+        margin: 10px 0;
+    }
 }
 
 .header__nav > a:hover {
@@ -969,6 +1025,26 @@ footer .header__nav a:first-child {
 .fa-twitter__padding,
 .fa-vimeo-v__padding {
     padding-right: 15px;
+}
+
+.bottom__nav {
+    margin: 20px 0;
+}
+
+.bottom__nav > a {
+    color: $black_font_color;
+    margin-left: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 500;
+    transition: color  0.4s ease-in-out;
+    z-index: 1;
+}
+
+.bottom__nav > a:hover {
+    color: $red_button_color;
 }
 
 h5 {
