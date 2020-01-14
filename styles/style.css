@@ -27,59 +27,95 @@
 
 /*VARIABLES*/
 /* Header*/
+@media (max-width: 768px) {
+  .header__main .container {
+    background: rgba(44, 43, 43, 0.5);
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+    max-width: none;
+    position: fixed;
+    z-index: 1; } }
+
 .header__items {
   display: flex;
   justify-content: flex-start; }
   @media (max-width: 768px) {
     .header__items {
       justify-content: space-between;
-      align-items: flex-end; } }
+      align-items: center; } }
 
 .header__logo {
   padding-right: 160px; }
   @media (max-width: 768px) {
     .header__logo {
-      padding-right: 0; } }
+      padding-right: 0;
+      display: flex;
+      margin: 5px auto; } }
 
 .burger {
   width: 25px;
   height: 2px;
   background-color: #ff817e;
   display: none; }
-  .burger::after {
+  .burger::after, .burger::before {
     content: "";
     position: absolute;
     width: 25px;
     height: 2px;
     background-color: #ff817e;
-    margin-top: -10px; }
+    transition: 0.3s; }
   .burger::before {
-    content: "";
-    position: absolute;
-    width: 25px;
-    height: 2px;
-    background-color: #ff817e;
-    margin-top: -20px; }
+    transform: translateY(-7px); }
+  .burger::after {
+    transform: translateY(7px); }
   @media (max-width: 768px) {
     .burger {
-      display: block; } }
+      display: block;
+      z-index: 2;
+      margin-right: 15px; } }
+
+.burger__active {
+  height: 0; }
+
+.burger__active::before {
+  transform: rotate(45deg); }
+
+.burger__active::after {
+  transform: rotate(-45deg); }
 
 .header__nav {
   display: flex;
   align-items: flex-end; }
   @media (max-width: 768px) {
     .header__nav {
-      display: none; } }
+      position: fixed;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 200px;
+      top: 0;
+      right: 0;
+      height: 100%;
+      padding-top: 100px;
+      padding-left: 25px;
+      margin-right: -100px;
+      opacity: 0;
+      transition: all  0.4s ease-in-out; } }
 
 .header__nav__burger {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 80px;
-  width: 100%;
-  background-color: #e2bdbd;
-  align-items: center;
-  left: 0; }
+  align-items: flex-start;
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background-color: rgba(52, 52, 52, 0.9);
+  top: 0;
+  right: 0;
+  margin-right: 0;
+  padding-top: 100px;
+  opacity: 1;
+  transition: all  0.4s ease-in-out; }
 
 .header__nav > a {
   color: #263a41;
@@ -94,7 +130,8 @@
   z-index: 1; }
   @media (max-width: 768px) {
     .header__nav > a {
-      margin: 10px 0; } }
+      margin: 10px 0;
+      color: white; } }
 
 .header__nav > a:hover {
   color: #ff817e; }
@@ -102,6 +139,9 @@
 /*Banner*/
 .banner {
   padding: 9% 0; }
+  @media (max-width: 768px) {
+    .banner {
+      padding-top: 100px; } }
 
 .leaf__img {
   position: absolute;
